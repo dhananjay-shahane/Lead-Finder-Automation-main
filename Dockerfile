@@ -1,16 +1,9 @@
-FROM node:20-bullseye-slim
+FROM node:20-bookworm-slim
 
-# Install system dependencies for Playwright and Chromium
-RUN apt-get update && apt-get install -y \
-    wget \
-    gnupg \
+# Install ca-certificates and procps for process management
+RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates \
     procps \
-    libxss1 \
-    libasound2 \
-    libatk-bridge2.0-0 \
-    libgtk-3-0 \
-    --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # Set working directory
