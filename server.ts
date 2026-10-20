@@ -2640,11 +2640,18 @@ app.get("/api/status", (req, res) => {
 });
 
 async function startServer() {
+  const distPath = path.join(process.cwd(), "dist");
+  const isProduction =
+    process.env.NODE_ENV === "production" ||
+    process.env.RENDER === "true" ||
+    (process.env.NODE_ENV !== "development" && fs.existsSync(path.join(distPath, "index.html")));
+
   // Vite integration middleware in dev mode
-  if (process.env.NODE_ENV !== "production") {
+  if (!isProduction) {
     const vite = await createViteServer({
       server: {
         middlewareMode: true,
+        allowedHosts: true,
         watch: {
           ignored: [
             "**/data/**",

@@ -9,6 +9,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Set working directory
 WORKDIR /app
 
+# Set production environment
+ENV NODE_ENV=production
+
 # Copy dependency configs
 COPY package*.json ./
 
