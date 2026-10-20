@@ -1,0 +1,9 @@
+[3:18:03 PM] INFO: Local Outreach Campaign started: "It Companies Mumbai Campaign" (619 total records).
+[3:18:03 PM] INFO: Config: Delay=30s, Email=true, WhatsApp=false, DryRun=false, SkipAlreadySent=true
+[3:18:09 PM] SUCCESS: Email sent successfully → hr@mypcot.com (Lead #1)
+[3:18:54 PM] SUCCESS: Email sent successfully → info@acaira.com (Lead #2)
+[3:19:37 PM] SUCCESS: Email sent successfully → business@softlabsgroup.com (Lead #3)
+[3:20:21 PM] SUCCESS: Email sent successfully → contact@hertzsoft.com (Lead #4)
+[3:21:09 PM] SUCCESS: Email sent successfully → info@direction.biz (Lead #5)
+[3:21:52 PM] SUCCESS: Email sent successfully → info@aiminfocom.com (Lead #6)
+[3:22:35 PM] SUCCESS: Email sent successfully → chdigitalsolutions2025@gmail.com (Lead #7)
